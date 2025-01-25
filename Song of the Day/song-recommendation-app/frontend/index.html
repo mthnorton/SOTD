@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song of the Day<title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Song Recommendation App</h1>
+        <div class="input-section">
+            <label for="song-number">Enter Song Number (1-365):</label>
+            <input type="number" id="song-number" placeholder="e.g., 1" min="1" max="365">
+            <button id="recommend-button">Get Recommendations</button>
+        </div>
+        <div class="song-info-section" style="display: none;">
+            <h2>Song Information:</h2>
+            <div id="song-info"></div>
+        </div>
+        <div class="recommendations-section" style="display: none;">
+            <h2>Recommendations:</h2>
+            <ul id="recommendations-list"></ul>
+        </div>
+        <div class="swap-section" style="display: none;">
+            <button id="swap-button">Swap 7th and 8th Recommendations</button>
+        </div>
+        <div class="more-info-section" style="display: none;">
+            <button id="more-info-button">More Info</button>
+            <div id="more-info"></div>
+        </div>
+        <div class="review-section" style="display: none;">
+            <button id="review-button">Leave a Review</button>
+            <div id="review"></div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
